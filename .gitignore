@@ -1,0 +1,8 @@
+# Dependencies for tools/export-from-memory-app.mjs
+node_modules/
+
+# Study files and packs hold your own cards and progress. This repo is public
+# (GitHub Pages), so never commit them by accident.
+*.zip
+
+.DS_Store

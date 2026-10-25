@@ -1,0 +1,15 @@
+{
+  "name": "memory-app-offline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline, static-HTML flashcards on the same Ebbinghaus ladder as memory-app.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/",
+    "serve": "python3 -m http.server 8000",
+    "make-pack": "node tools/make-pack.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

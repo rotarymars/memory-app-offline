@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Memory オフライン</title>
+    <meta name="description" content="エビングハウス式の間隔で復習する暗記カード（オフライン版）" />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Memory" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./icons/icon-192.png" type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script type="module" src="./js/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="#/">
+          <span class="brand__mark" aria-hidden="true"></span>
+          Memory
+          <span class="brand__sub">オフライン</span>
+        </a>
+        <div class="header-status" id="header-status"></div>
+      </div>
+      <nav class="site-nav" id="site-nav" aria-label="メニュー" hidden>
+        <a href="#/" data-nav="home">ホーム</a>
+        <a href="#/review" data-nav="review">復習</a>
+        <a href="#/cards" data-nav="cards">カード</a>
+        <a href="#/import" data-nav="import">取り込み</a>
+        <a href="#/pack" data-nav="pack">パック作成</a>
+        <a href="#/progress" data-nav="progress">進捗</a>
+        <a href="#/file" data-nav="file">ファイル</a>
+      </nav>
+    </header>
+    <div class="banners" id="banners" aria-live="polite"></div>
+    <main class="site-main" id="app">
+      <noscript>このアプリを使うには JavaScript を有効にしてください。</noscript>
+      <p class="muted boot-message" id="boot-message">読み込み中…</p>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        エビングハウス式の間隔 — 10分, 30分, 1時間, 2時間, 3時間, 6時間, 12時間, 1日, 2日, 3日, 5日, 10日, 15日, 1か月, 2か月, 3か月。
+        <span id="app-version"></span>
+      </div>
+    </footer>
+    <div id="modal-root"></div>
+    <div class="toasts" id="toasts" aria-live="polite"></div>
+  </body>
+</html>

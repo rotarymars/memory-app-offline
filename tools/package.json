@@ -1,0 +1,16 @@
+{
+  "name": "memory-app-offline-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dependencies for tools/export-from-memory-app.mjs only. The static site and make-pack.mjs need none of this.",
+  "type": "module",
+  "scripts": {
+    "export-from-memory-app": "node export-from-memory-app.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
